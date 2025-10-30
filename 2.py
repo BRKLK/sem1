@@ -61,9 +61,6 @@ def MyEval(expr: str) -> float:
                 j -= 1
             i = j + 1
 
-    print(nums)
-    print(ops)
-
     # performing Multiplications and divisions
     nums_new = [nums[0]]
     ops_new = []
@@ -73,9 +70,6 @@ def MyEval(expr: str) -> float:
             ops_new.append(op)
         elif priors[op] == 2:
             nums_new[-1] = perform_op(nums_new[-1], nums[i+1], op)
-
-    print(nums_new)
-    print(ops_new)
 
     # performing additions and subtractions
     value = nums_new[0]
