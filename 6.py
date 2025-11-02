@@ -1,7 +1,5 @@
 # Selection sort
 def SelectionSort(arr):
-    min_index = 0
-
     for i in range(len(arr)):
         min_index = i
         for j in range(i, len(arr)):
@@ -11,7 +9,6 @@ def SelectionSort(arr):
         arr[i] = arr[min_index]
         arr[min_index] = temp
 
-    
     return arr
 
 
